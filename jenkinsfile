@@ -1,0 +1,38 @@
+// #bring the code from scm
+
+// stages{
+// stage("checkout"){
+// git clone url
+// }
+// stage("CI"){
+// zip -r name-$BUILD-NUMBER.zip *
+
+// aws s3 cp name-$BUILD-NUMBER.zip  s3://bucket//
+// }
+// stage("CD"){
+// aws s3 cp s3://bucket/
+// unzip file.zip
+// scp 
+// }
+// }
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('india') {
+            steps {
+                echo 'India wants'
+            }
+        }
+         stage('Austrila') {
+            steps {
+                echo 'Austrila comes'
+            }
+        }
+    }
+}
